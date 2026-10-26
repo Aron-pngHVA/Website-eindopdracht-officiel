@@ -1,0 +1,179 @@
+body {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #000000;
+    background-image: url("../Afbeeldingen/Pagina2website.png");
+    background-size: 1100px 800px;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+header {
+    position: absolute;
+    top: 0%;
+    left: -45%;
+    right: 0%;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+p {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -70%);
+    color: #ffffff;
+    max-width: 100%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: min(100%, 52rem);
+    padding: 1rem;
+    font-size: clamp(0.9rem, 1.4vw, 1.1rem);
+}
+
+footer p {
+    position: static;
+    margin: 0;
+    transform: none;
+    line-height: 1.4;
+    font-weight: 600;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+footer p + p {
+    background: linear-gradient(#ffffff, #ffffff) left top / 70% 1px no-repeat;
+    padding-top: 0.5rem;
+}
+
+
+.vorige-pagina {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: block;
+    width: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+.vorige-pagina img {
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: invert(1);
+    transition: transform 0.2s ease;
+}
+
+.vorige-pagina:hover img,
+.vorige-pagina:focus-visible img {
+    transform: translateX(-4px);
+}
+
+.vorige-pagina:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+}
+
+.volgende-pagina {
+    position: absolute;
+    top: 149px;
+    right: 30px;
+    z-index: 1;
+    display: block;
+    width: 355px;
+    clip-path: inset(28% 25% 25% 25%);
+}
+
+.volgende-pagina img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transform-origin: right top;
+    transition: transform 180ms ease, filter 180ms ease;
+}
+
+.volgende-pagina:hover img,
+.volgende-pagina:focus-visible img {
+    transform: scale(1.005);
+    filter: brightness(1.25);
+}
+
+.volgende-pagina:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+}
+
+.sociale-media {
+    position: absolute;
+    top: 65%;
+    right: 0.5rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transform: translateY(-50%);
+}
+
+.sociale-media a {
+    text-decoration: underline;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.youtube {
+    position: relative;
+    top: -8px;
+    left: 0;
+    color: #ff0000;
+    text-shadow: 1px 1px 2px #ffffff;
+}
+
+.tiktok {
+    position: relative;
+    top: -6px;
+    left: 0;
+}
+
+.tiktok .tik {
+    color: #000000;
+    text-shadow: 1px 1px 2px #25f4ee;
+}
+
+.tiktok .tok {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #fe2c55;
+}
+
+.x {
+    position: relative;
+    top: -4px;
+    left: 7px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #555555;
+}
+
+.facebook {
+    position: relative;
+    top: 4px;
+    left: 8px;
+    color: #0866ff;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 2px #ffffff;
+}
+
+.instagram {
+    position: relative;
+    top: -20px;
+    left: 0;
+    color: #d62976;
+    font-size: 1.1rem;
+}

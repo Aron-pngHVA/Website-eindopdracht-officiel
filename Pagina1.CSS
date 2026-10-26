@@ -1,0 +1,180 @@
+body {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #000000;
+    background-image: url("../Afbeeldingen/Pagina1website.png");
+    background-size: 1100px 800px;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+header {
+   position: absolute;
+    color: #fff;
+    padding: 1rem;
+    text-align: left;
+}
+
+header h1 {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+header h3,
+footer p {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+p {
+    display: block;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-100%, -70%);
+    color: #ffffff;
+    max-width: 100%;
+}
+
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: min(100%, 52rem);
+    padding: 1rem;
+}
+
+
+footer p {
+    position: static;
+    margin: 0;
+    transform: none;
+    line-height: 1.4;
+    font-size: clamp(1.1rem, 1.8vw, 1.3rem);
+    font-weight: 600;
+}
+
+footer p + p {
+    background: linear-gradient(#ffffff, #ffffff) left top / 70% 1px no-repeat;
+    padding-top: 0.5rem;
+}
+
+.volgende-pagina {
+    position: absolute;
+    top: 65px;
+    right: 16px;
+    z-index: 1;
+    display: block;
+    width: 270px;
+    transform-origin: right top;
+    transition: transform 180ms ease, filter 180ms ease;
+}
+
+.volgende-pagina img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.volgende-pagina .poort-tekst {
+    position: absolute;
+    top: 68%;
+    left: 50%, 8px;
+    width: 80%;
+    margin: 0;
+    transform: translate(-45%, -50%);
+    color: #ffffff;
+    text-align: center;
+    font-size: clamp(0.6rem, 1vw, 0.8rem);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+    pointer-events: none;
+}
+
+.volgende-pagina:hover {
+    transform: scale(1.08);
+    filter: brightness(1.15);
+}
+
+.volgende-pagina:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+}
+
+
+.woordenlijst {
+    position: absolute;
+    top: 30%;
+    right: 8rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.woordenlijst p {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    transform: none;
+    transition: color 180ms ease, text-shadow 180ms ease, transform 180ms ease;
+}
+
+.woordenlijst p:hover {
+    color: #ffd166;
+    text-shadow: 2px 2px 6px rgba(255, 209, 102, 0.8);
+    transform: scale(1.08);
+}
+
+.woordenlijst .reageren {
+    top: 250px;
+    left: -215px;
+    font-size: clamp(2rem, 1.2vw, 1rem);
+}
+
+.woordenlijst .onderbreken {
+    top: 310px;
+    left: -155px;
+    font-size: clamp(2rem, 1.2vw, 1rem);
+}
+
+.woordenlijst .oordelen {
+    top: 85px;
+    left: -135px;
+    font-size: clamp(1.5rem, 1.2vw, 1rem);
+}
+
+.woordenlijst .nadenken {
+    top: -10px;
+    left: -80px;
+    font-size: clamp(1.5rem, 1.2vw, 1rem);
+}
+
+.woordenlijst .luisteren {
+    top: -183px;
+    left: 70px;
+}
+
+.woordenlijst .begrijpen {
+    top: -180px;
+    left: 100px;
+}
+
+.woordenlijst .communiceren {
+    top: -145px;
+    left: -30px;
+    font-size: clamp(1rem, 1.2vw, 1rem);
+}
+
+.woordenlijst .aandacht {
+    top: -210px;
+    left: 40px;
+    font-size: clamp(1rem, 1.2vw, 1rem);
+}

@@ -1,0 +1,95 @@
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.85);
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #000000;
+    background-image: url("../Afbeeldingen/schatkist einde.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+p {
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    right: 20%;
+    text-align: center;
+    color: #ffffff;
+    max-width: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.bronnen {
+    position: absolute;
+    top: auto;
+    bottom: 20%;
+    left: 50%;
+    width: min(90%, 50rem);
+    transform: translateX(-50%);
+    color: #ffffff;
+    text-align: left;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.bronnen h2 {
+    text-align: center;
+}
+
+.bronnen ol {
+    padding-left: 1.5rem;
+}
+
+.bronnen li {
+    padding-left: 0.3rem;
+    margin-bottom: 0.5rem;
+    overflow-wrap: anywhere;
+}
+
+.bronnen a {
+    color: #ffffff;
+}
+.vorige-pagina {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: block;
+    width: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+.vorige-pagina img {
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: invert(1);
+    transition: transform 0.2s ease;
+}
+
+.vorige-pagina:hover img,
+.vorige-pagina:focus-visible img {
+    transform: translateX(-4px);
+}
+
+.vorige-pagina:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+}
